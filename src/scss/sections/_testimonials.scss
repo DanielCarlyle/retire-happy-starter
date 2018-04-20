@@ -1,0 +1,91 @@
+#testimonials {
+
+  @include clearfix;
+  padding: 4rem 0;
+
+  .testimonials--headline {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  }
+
+  h2:before {
+    display: none;
+
+    @include sm {
+      display: inline-block;
+      margin: 0 0 8px 20px;
+      height: 3px;
+      content: " ";
+      text-shadow: none;
+      background-color: $green;
+      width: 4rem;
+    }
+}
+  h2:after {
+  display: none;
+
+  @include sm {
+    display: inline-block;
+    margin: 0 0 8px 20px;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: $green;
+    width: 4rem;
+  }
+}
+
+}
+
+.testimonials-content {
+  padding-left: 15%;
+  padding-right: 15%;
+  color: $grey;
+  font-size: 1em;
+  position: relative;
+  padding-top: 2rem;
+  font-style: italic;
+}
+
+
+
+#testimonials .divider {
+  color: $grey;
+  font-family: $font-main;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+
+.fa-quote-left {
+    position: absolute;
+    z-index: -5;
+    opacity: .2;
+    left: 2rem;
+    color: $green;
+}
+
+.fa-quote-right {
+    position: absolute;
+    z-index: -5;
+    opacity: .2;
+    right: 2rem;
+    bottom: 0;
+    color: $green;
+}
+
+#testimonials .divider {
+    display: none;
+    color:$orange-sub-text;
+    font-family: $font-main;
+    font-size: 24px;
+    margin: 10px 0;
+
+    @include xl {
+      display: inline-block;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+}

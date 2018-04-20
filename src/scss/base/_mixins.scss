@@ -1,0 +1,129 @@
+/*
+Breakpoints and media queries in SCSS Mixin
+https://medium.com/codeartisan/breakpoints-and-media-queries-in-scss-46e8f551e2f2
+*/
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+
+// Small devices
+@mixin sm {
+   @media (min-width: #{$screen-sm-min}) {
+       @content;
+   }
+}
+
+// Medium devices
+@mixin md {
+   @media (min-width: #{$screen-md-min}) {
+       @content;
+   }
+}
+
+// Large devices
+@mixin lg {
+   @media (min-width: #{$screen-lg-min}) {
+       @content;
+   }
+}
+
+// Extra large devices
+@mixin xl {
+   @media (min-width: #{$screen-xl-min}) {
+       @content;
+   }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+   @media (min-width: $screen+'px') {
+       @content;
+   }
+}
+
+
+
+@mixin border-radius($border) {
+  border-radius: $border;
+}
+
+
+@mixin linkColor($color) {
+     color: $color;
+     text-decoration: none;
+     background-color: transparent;
+     -webkit-text-decoration-skip: objects;
+
+     &:hover, &:active, &:focus {
+         color: lighten($color, 20%);
+     }
+}
+
+@mixin button($btn-bg-color, $btn-hover-bg-color, $color, $border-color) {
+    @include border-radius($btn-border-radius);
+    display: inline-block;
+    background-color: $btn-bg-color;
+    color: $color;
+    border: $border-outline;
+    text-decoration: none;
+		//font-family: 'Arvo-BoldItalic', 'Montserrat-Regular';
+    text-transform: uppercase;
+    font-size: $btn-font-size;
+    transition: .3s ease;
+    margin-top: 1rem;
+    padding: $btn-padding;
+    font-weight: $btn-font-weight;
+
+    &:hover, &:active, &:focus {
+      background-color: $btn-hover-bg-color;
+      color: $color;
+    }
+}
+
+@mixin headline ($color, $size) {
+	color: $color;
+	font-size: $size;
+	font-weight: 300;
+	line-height: 110%;
+	//text-shadow: 2px 2px 1px #000;
+	position: relative;
+	z-index: 4;
+	overflow: hidden;
+  text-transform: uppercase;
+	/* padding-bottom: 55px!important; */
+}
+
+// Image replacement
+
+@mixin img-replace($img, $w, $h, $disp: block) {
+	background-image: url('#{$path--rel}/#{$img}');
+	background-repeat: no-repeat;
+	width: $w;
+	height: $h;
+	display: $disp;
+}
+
+//Padding mixin
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+//Margin mixin
+@mixin margin($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}

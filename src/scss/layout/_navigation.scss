@@ -1,0 +1,3 @@
+.site-logo {
+  @include img-replace("rto-logo.png", 115px, 84px, inline-block);
+}

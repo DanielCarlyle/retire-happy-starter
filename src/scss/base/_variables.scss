@@ -1,0 +1,61 @@
+//colors
+$blue: #0076A3;
+$dark-blue: darken($blue, 10);
+$white: #ffffff;
+$black: #000;
+$primary-color: $dark-blue;
+$green: #bfc406;
+$grey: #37474F;
+$dark-grey: #545353;
+$yellow: #f3d350;
+$dark-blue-banner: #1c2e38;
+$red: #d14348;
+
+//Section Background Colors.
+$bg-color: #ffffff;
+$section-navyblue: #003768;
+$rto-brandcolor: #239a9e;
+$section-blue: #d6eeee;
+$cyan: #3bacb0;
+$dark-cyan: rgb(41, 97, 109);
+
+//Text.
+$font-main: Raleway,Helvetica,Arial,sans-serif;
+$font-weight-normal: 300;
+$font-weight-bold: 600;
+$font-weight-heavy: 700;
+$orange-sub-text: #fe8302;
+$blue-sub-text: #0dacb5;
+$main-text-white: #fff;
+$orange-rto-title: rgb( 252, 133, 9);
+$blue-rto-title: #003768;
+$footer-link-color: #11c7e5;
+$size: 1rem;
+
+
+// Buttons
+$btn-font-size: 16px;
+$color: $white;
+$border-color: $black;
+$btn-padding: 10px 13px;
+$btn-bg-color: $primary-color;
+$btn-text-color: $white;
+$btn-hover-text-color: $white;
+$btn-hover-bg-color: darken($btn-bg-color, 10%);
+
+$btn-white-bg-color: $white;
+$btn-white-text-color: $black;
+$btn-white-hover-text-color: $btn-white-text-color;
+$btn-white-hover-bg-color: #DEDEDE;
+
+$btn-black-bg-color: $black;
+$btn-black-text-color: $white;
+$btn-black-hover-text-color: $white;
+$btn-black-hover-bg-color: lighten($btn-black-bg-color, 5%);
+
+$btn-border-radius: 10px;
+$btn-font-weight: 200;
+$border-outline: darken($btn-bg-color, 10%);
+
+//Path to Assets
+$path--rel : "../img";

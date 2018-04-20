@@ -1,0 +1,28 @@
+.section {
+    min-height: 40vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: 160%;
+
+    .headline {
+    text-transform: uppercase;
+    font-weight: $font-weight-normal;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    line-height: 110%;
+    }
+
+    em, a {
+    font-size: 110%;
+    vertical-align: -2%;
+    }
+}
+
+
+.bg-faded {
+    background-color: #f5f8fb;
+}

@@ -1,0 +1,13 @@
+.form-container {
+  background: $dark-blue-banner;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+
+  @include md {
+  @include double-borders(#eaf1f5, #ffffcc, 10px);
+  }
+}
+
+label {
+  font-size: 0.8em;
+}

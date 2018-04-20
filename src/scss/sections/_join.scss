@@ -1,0 +1,9 @@
+.join {
+  @include padding(2rem, 0rem, 4rem, 0rem);
+  background: $blue;
+
+  p:nth-of-type(1) a {
+    color: $orange-sub-text;
+    font-weight: 800;
+  }
+}

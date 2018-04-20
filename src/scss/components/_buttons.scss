@@ -1,0 +1,52 @@
+/*
+Button Styling
+*/
+ .btn-standard {
+   @include button($btn-bg-color, $btn-hover-bg-color, $color, $border-color);
+ }
+
+ .btn-orange {
+   @include button($orange-sub-text, darken($orange-sub-text, 10), $white, $border-color);
+   @include border-radius(0);
+   font-weight: bold;
+   line-height: 1.75;
+   padding: 11px;
+   font-size: 1em;
+   text-align: left;
+   opacity: .9;
+
+   &:hover, :focus  {
+     opacity: 1;
+     transform: scale(1.1);
+     z-index: 1;
+     border: 1px solid $white;
+     text-decoration: none;
+   }
+ }
+
+
+@media only screen and (max-width:768px) {
+  .btn-orange {
+      border-radius: 10px;
+      display: inline-block;
+      background-color: #fe8302;
+      border: #1f69ff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 13px;
+      -webkit-transition: .3s ease;
+      transition: .3s ease;
+      margin-top: 1.5rem;
+      font-weight: 400;
+      border-radius: 4px;
+      padding: 12px;
+      text-align: center;
+      line-height: 1.7;
+     }
+  }
+ /*
+ Link Colors
+ */
+.link-white {
+  @include linkColor($white);
+}

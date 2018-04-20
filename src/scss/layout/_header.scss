@@ -1,0 +1,22 @@
+.header {
+  min-height: 46.8em;
+  //width: 100%;
+  background: linear-gradient(180deg,rgba(0,0,0,.2),rgba(0,0,0,.5)), url('https://images.unsplash.com/photo-1460750860062-82a52139a0d6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ad6f8d20e4b6da905c5bb18ea656ce60&auto=format&fit=crop&w=1950&q=80') no-repeat center bottom;
+  background-attachment: fixed;
+  //@include background-size(100vw, 50vh);
+  background-size: cover;
+  overflow: hidden;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0,0,0,0.3);
+  -ms-box-shadow: 0 4px 4px 0 rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 4px 4px 0 rgba(0,0,0,0.3);
+  -o-box-shadow: 0 4px 4px 0 rgba(0,0,0,0.3);
+}
+
+.banner h1 + p {
+  @include text-shadow(2px, 2px, 5px, rgba(0,0,0,0.8));
+}
+
+.bg-banner {
+  @include background-gradient (#1d2e39, #243842);
+}
